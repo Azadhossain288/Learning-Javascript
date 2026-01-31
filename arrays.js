@@ -70,4 +70,11 @@ document.write(total + '<br>');
 let country=cnt1.concat(cnt2);
 document.write(country + '<br>');
 
+//Declare array
+let num=new Array();
+for(let i=0;i<5;i++){
+     num[i]=parseInt(prompt('Enter a number: '));
+
+     document.write(num[i]);
+}
 
