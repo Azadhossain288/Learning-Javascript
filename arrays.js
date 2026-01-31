@@ -73,8 +73,82 @@ document.write(country + '<br>');
 //Declare array
 let num=new Array();
 for(let i=0;i<5;i++){
-     num[i]=parseInt(prompt('Enter a number: '));
+    //  num[i]=parseInt(prompt('Enter a number: '));
 
      document.write(num[i]);
 }
+
+document.write('<br>');
+
+//shift->Removine first element of an array
+
+let userName=['Machine Learning','Web development','Software Engineering'];
+document.write(userName + '<br>');
+
+userName.shift();
+ document.write(userName+ '<br>');
+
+ //unshift->Adding first element of an array
+
+ userName.unshift('Data Scientist');
+ document.write(userName + '<br>');
+
+
+ // splice() method -> splice(indexNumber,NoOfRemoveElement or for replcing,addingElement);
+
+ let teacherNames=['Rafi','Limon','Sakib'];
+
+  document.write(teacherNames + '<br>');
+
+//  teacherNames.splice(2, 1, 'Jakaria','Najrul','Mahdi','Mahfuj');
+// document.write(teacherNames + '<br>');
+
+// Removing elements of index
+
+// teacherNames.splice(3,4);
+// document.write(teacherNames);
+
+
+
+// slice ->removing element using slice but after if i print main array then it was unchanged.
+
+ let newArry= teacherNames.slice(1);
+ document.write(newArry + '<br>');
+
+ document.write(teacherNames + '<br>');
+
+
+ // sort->sorting element ,type:ascending,descending,onle works with alphabet but not works numbers
+ // For numberSort -> if difference is positive so,in front of this value  ,if negetive,unchanged,or 0 ->unchanged
+
+ let sortedName=teacherNames.sort();
+ document.write('Sorted Name: '  +sortedName + '<br>');
+
+ let numbers=[20,5,25,45,1];
+//  let sortNumbers=numbers.sort(); //it`s not possible because it can see unsorted
+
+//Ascending Order
+ numbers.sort(function(a,b){
+
+        return a-b;
+ });
+
+document.write('Sorted Number: ' +numbers + '<br>');
+ //Ascending Order
+ numbers.sort(function(a,b){
+
+        return b-a;
+ });
+
+
+document.write('Sorted Number: ' +numbers);
+
+
+
+ 
+
+
+ 
+
+
 
