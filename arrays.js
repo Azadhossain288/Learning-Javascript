@@ -134,7 +134,7 @@ userName.shift();
  });
 
 document.write('Sorted Number: ' +numbers + '<br>');
- //Ascending Order
+ //Descending Order
  numbers.sort(function(a,b){
 
         return b-a;
