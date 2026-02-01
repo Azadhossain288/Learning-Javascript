@@ -141,7 +141,36 @@ document.write('Sorted Number: ' +numbers + '<br>');
  });
 
 
-document.write('Sorted Number: ' +numbers);
+document.write('Sorted Number: ' +numbers + '<br>');
+
+
+// 1D Array
+
+// Find max score
+
+function highestScor(scores){
+     
+       // document.write(scores);
+
+       // console.log(scores);
+
+       let max=scores[0];
+       for(let i=1;i<scores.length;i++){
+                if(max<scores[i]){
+                      max=scores[i];
+                }
+       }
+
+       return max;
+     
+}
+
+let scores=[21,28,1,88,15];
+let res=highestScor(scores);
+document.write(res);
+// console.log(res);
+
+
 
 
 
