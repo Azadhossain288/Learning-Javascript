@@ -188,3 +188,122 @@ console.log(keys);
 for(const key of keys){
     console.log(key);
 }
+
+
+/*
+
+// How to create an object
+// How to print the value of an object
+// adding a constructor
+// adding function inside a constructor
+
+
+
+*/
+
+
+let name='Azad Hossain';
+let cgpa=3.60;
+let lang=['Bangali','Hindi','English'];
+
+// Creating constructor
+
+function Student(name,cgpa,lang){
+      this.name=name;
+      this.cgpa=cgpa;
+      this.lang=lang;
+
+  //adding function inside a constructor
+
+      this.display=function(){
+
+            console.log(this.name);
+            console.log(this.cgpa);
+            console.log(this.lang);
+
+      }
+
+
+}
+
+let student1=new Student("Azad Hossain",3.60, ['Bangali','Hindi','English']);
+let student2=new Student("Arif Hossain",3.40, ['Bangali','Hindi','English']);
+let student3=new Student("Asif Hossain",3.30, ['Bangali','Hindi','English']);
+
+
+// hence, using function inside constructor
+
+student1.display();
+student2.display();
+student3.display();
+
+
+
+
+
+/*
+
+//After using constructor
+
+console.log(student1.name);
+console.log(student1.cgpa);
+console.log(student1.lang);
+
+
+
+console.log(student2.name);
+console.log(student2.cgpa);
+console.log(student2.lang);
+
+
+
+console.log(student3.name);
+console.log(student3.cgpa);
+console.log(student3.lang);
+
+*/
+
+
+
+//...Common way...
+// let student1={
+
+//     name:"Azad Hossain",
+//     cgpa:3.60,
+//     lang: ['Bangali','Hindi','English']
+// }
+
+
+// let student2={
+
+//     name:"Arif Hossain",
+//     cgpa:3.40,
+//     lang: ['Bangali','Hindi','English']
+// }
+
+
+// let student3={
+
+//     name:"Asif Hossain",
+//     cgpa:3.30,
+//     lang: ['Bangali','Hindi','English']
+// }
+
+/*
+
+console.log(student1.name);
+console.log(student1.cgpa);
+console.log(student1.lang);
+
+
+
+console.log(student2.name);
+console.log(student2.cgpa);
+console.log(student2.lang);
+
+
+console.log(student3.name);
+console.log(student3.cgpa);
+console.log(student3.lang);
+ 
+*/
